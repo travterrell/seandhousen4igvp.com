@@ -1,0 +1,379 @@
+`html, body {
+  height: 100%;
+}
+
+@font-face {
+    font-family: big_noodle_titling;
+    src: url(assets/big_noodle_titling.ttf);
+}
+
+body {
+  background-image: url("assets/index/founderbg.jpg");
+  background-color: #19100e;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  /*background-attachment: fixed;*/
+  background-position: center 40px;
+  color: white;
+  font-size: 17px;
+}
+
+.container-fluid {
+  position: relative;
+  min-height: 100%;
+}
+
+@media only screen and (max-width : 767px) {
+  .nav {
+    background-color: white;
+    height: 40px;
+    line-height: 40px;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    font-family: big_noodle_titling;
+    font-size: 20px;
+  }
+
+  .nav ul {
+    /*border: 2px solid red;*/
+    margin: 0px auto;
+    width: 100%;
+    padding: 0px;
+  }
+
+  .nav li {
+    list-style-type: none;
+    float: left;
+    width: 25%;
+    text-align: center;
+    /*border: 2px solid red;*/
+  }
+}
+
+@media only screen and (min-width : 768px) {
+  .nav {
+    background-color: white;
+    height: 40px;
+    line-height: 40px;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    font-family: big_noodle_titling;
+    font-size: 25px;
+  }
+
+  .nav ul {
+    /*border: 2px solid red;*/
+    margin: 0px auto;
+    width: 796px;
+    padding: 0px;
+  }
+
+  .nav li {
+    list-style-type: none;
+    float: left;
+    width: 198px;
+    text-align: center;
+    /*border: 2px solid red;*/
+  }
+}
+
+.nav li a {
+  color: #150e0d;
+  text-decoration: none;
+}
+
+.content {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    line-height: 100%;
+    /*border: 2px solid red;*/
+}
+
+@media only screen and (max-width : 767px) {
+  #indexpic {
+    position: relative;
+    width: 100%;
+    max-width: 480px;
+    /*padding: 0px;*/
+    margin: auto;
+    top: 50%;
+    /*border: 2px solid green;*/
+    -ms-transform: translate(0, -50%); /* IE 9 */
+    -webkit-transform: translate(0, -50%); /* Chrome, Safari, Opera */
+    transform: translate(0, -50%);
+  }
+}
+
+@media only screen and (min-width : 768px) {
+  #indexpic {
+    position: relative;
+    width: 100%;
+    padding: 0px;
+    top: 50%;
+    /*border: 2px solid green;*/
+    -ms-transform: translate(0, -50%); /* IE 9 */
+    -webkit-transform: translate(0, -50%); /* Chrome, Safari, Opera */
+    transform: translate(0, -50%);
+  }
+}
+
+/*picture {
+  display: table-cell;
+}*/
+
+.about_title {
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+@media only screen and (max-width : 767px) {
+  /*#about-mobile {
+    padding-right: 0px;
+  }*/
+
+  .aboutpics {
+    text-align: center;
+  }
+
+  #about1pic {
+    width: 250px;
+    margin: auto;
+  }
+
+  #about1p {
+    width: 100%;
+  }
+
+  #about2pic {
+    width: 320px;
+  }
+
+  #about3pic {
+    width: 320px;
+  }
+
+  #about4pic {
+    width: 160px;
+  }
+
+  .about_4 {
+    /*border: 2px solid red;*/
+    margin-bottom: 65px;
+  }
+}
+
+@media only screen and (min-width : 768px) {
+  .about_1 {
+    width: 768px;
+    /*border: 2px solid red;*/
+    margin: 0px auto 10px;
+  }
+
+  .aboutpics {
+    padding: 0px;
+  }
+
+  #about1pic {
+    width: 250px;
+    padding: 0px;
+    /*border: 2px solid white;*/
+  }
+
+  #about1p {
+    width: 518px;
+    /*border: 2px solid white;*/
+    margin-left: 55px;
+    margin-top: 30px;
+  }
+
+  .about_2 {
+    width: 768px;
+    /*border: 2px solid red;*/
+    margin: 0px auto 10px;
+  }
+
+  #about2pic {
+    width: 350px;
+    padding: 0px;
+    margin-left: -171px;
+    margin-top: 56px;
+    /*border: 2px solid white;*/
+  }
+
+  #about2p {
+    width: 418px;
+    /*border: 2px solid white;*/
+    /*margin-left: 55px;
+    margin-top: 70px;*/
+  }
+
+  .about_3 {
+    width: 768px;
+    /*border: 2px solid red;*/
+    margin: 0px auto 10px;
+  }
+
+  #about3pic {
+    width: 350px;
+    padding: 0px;
+    margin-top: 25px;
+    /*border: 2px solid white;*/
+  }
+
+  #about3p {
+    width: 418px;
+    /*border: 2px solid white;*/
+    margin-left: 155px;
+    margin-top: 42px;
+  }
+
+  .about_4 {
+    width: 768px;
+    /*border: 2px solid red;*/
+    margin: 0px auto 70px;
+  }
+
+  #about4pic {
+    width: 160px;
+    padding: 0px;
+    /*border: 2px solid white;*/
+  }
+
+  #about4p {
+    width: 573px;
+    /*border: 2px solid white;*/
+    /*margin-left: 55px;*/
+    margin-top: 70px;
+  }
+}
+
+.about p {
+  text-indent: 50px;
+}
+
+@media only screen and (max-width : 767px) {
+  .myplatform_title {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 30px;
+  }
+
+  .myplatform_content {
+    margin: 0px auto 20px;
+    /*border: 2px solid white;*/
+  }
+
+  .title {
+    /*border: 2px solid red;*/
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width : 768px) {
+  .star {
+    margin-left: -30px;
+  }
+
+  .myplatform_title {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 30px;
+  }
+
+  .myplatform_content {
+    margin: 0px auto 20px;
+    /*border: 2px solid white;*/
+  }
+
+  .title {
+    /*border: 2px solid red;*/
+    padding: 0px 0px 0px 9%;
+  }
+
+    .title img {
+      display: inline;
+    }
+
+  .platform_content {
+    padding-left: 50px;
+    padding-right: 5%;
+    margin-top: 5px;
+    /*border: 2px solid green;*/
+  }
+
+  /*#value {
+    margin-left: 7px;
+  }*/
+}
+
+.myplatform_bottom {
+  margin-bottom: 65px;
+}
+
+.donate_title {
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+.go_fundme_widget {
+  /*border: 2px solid red;*/
+  margin: 40px auto 65px;
+  text-align: center;
+}
+
+@media only screen and (max-width : 767px) {
+  .footer {
+    background-color: white;
+    line-height: 40px;
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    z-index: 2;
+    font-family: big_noodle_titling;
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width : 768px) {
+  .footer {
+    background-color: white;
+    /*height: 40px;*/
+    line-height: 40px;
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    z-index: 2;
+    font-family: big_noodle_titling;
+    font-size: 25px;
+  }
+}
+
+.footer ul {
+  /*border: 2px solid black;*/
+  margin: 0px auto;
+  width: 202px;
+  padding: 0px;
+}
+
+.footer li {
+  list-style-type: none;
+  float: left;
+  width: 200px;
+  text-align: center;
+  color: black;
+  /*border: 2px solid black;*/*/
+}
+
+.footer li a {
+  color: #150e0d;
+  text-decoration: none;
+}
+
+#footerlogo {
+  width: 50px;
+}
